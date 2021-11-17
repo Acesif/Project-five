@@ -1,0 +1,122 @@
+@import 'utility';
+@import 'variables';
+
+@media (max-width: 600px) {
+    body{
+        .main{
+            overflow: hidden;
+            .images{
+                .top-im{
+                    top: -280px;
+                    left: -280px;
+                    width: 550px;
+                }
+                .bot-im{
+                    bottom: -280px;
+                    right: -280px;
+                    width: 550px;
+                }
+            }
+        }
+    }
+
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .images{ 
+        .top-im,.bot-im{
+        position: absolute;
+        }
+        .top-im{
+            top: -600px;
+            left: -300px;
+        }
+        .bot-im{
+            bottom: -670px;
+            right: -250px;
+        }
+    }
+    
+
+    .container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        .top{
+            width: 85%;
+            background-color: #f2f2f2;
+            margin: 6px 15px auto 15px;
+            padding-bottom: 26px;
+            border-radius: 12px 12px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            .nameplace{
+                .nameage{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    sub{
+                        color: $Dark-grayish-blue;
+                    }
+                    .nama{
+                        display: flex;
+                        letter-spacing: 0.5px;
+                        strong{
+                            margin-right: 5px;
+                            margin-bottom: 5px;
+                            color: $Very-dark-desaturated-blue;
+                        }
+                        p{
+                            color: $Dark-grayish-blue;
+                        }
+                    }
+                }
+                img{
+                    border: 4px solid white;
+                    border-radius: 50%;
+                    margin: -45% auto 15% auto;
+                    display: block;
+                }
+            }
+        }
+        .stats{
+            padding: 25px 20px;
+            width: 85%;
+            background-color: #f2f2f2;
+            border-radius: 0 0 12px 12px;
+            border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 10.5px;
+                    letter-spacing: 1px;
+                    color: $Dark-grayish-blue;
+                    span{
+                        font-size: 17px;
+                        color: $Very-dark-desaturated-blue;
+                        font-weight: 700;
+                        display: block;
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

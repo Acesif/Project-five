@@ -1,0 +1,121 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #19a2ae;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+@media (max-width: 600px) {
+  body .main {
+    overflow: hidden;
+  }
+  body .main .images .top-im {
+    top: -280px;
+    left: -280px;
+    width: 550px;
+  }
+  body .main .images .bot-im {
+    bottom: -280px;
+    right: -280px;
+    width: 550px;
+  }
+}
+.main {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.main .images .top-im, .main .images .bot-im {
+  position: absolute;
+}
+.main .images .top-im {
+  top: -600px;
+  left: -300px;
+}
+.main .images .bot-im {
+  bottom: -670px;
+  right: -250px;
+}
+.main .container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.main .container .top {
+  width: 85%;
+  background-color: #f2f2f2;
+  margin: 6px 15px auto 15px;
+  padding-bottom: 26px;
+  border-radius: 12px 12px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.main .container .top .nameplace .nameage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .container .top .nameplace .nameage sub {
+  color: #6a6f81;
+}
+.main .container .top .nameplace .nameage .nama {
+  display: flex;
+  letter-spacing: 0.5px;
+}
+.main .container .top .nameplace .nameage .nama strong {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: #2d3248;
+}
+.main .container .top .nameplace .nameage .nama p {
+  color: #6a6f81;
+}
+.main .container .top .nameplace img {
+  border: 4px solid white;
+  border-radius: 50%;
+  margin: -45% auto 15% auto;
+  display: block;
+}
+.main .container .stats {
+  padding: 25px 20px;
+  width: 85%;
+  background-color: #f2f2f2;
+  border-radius: 0 0 12px 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main .container .stats ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main .container .stats ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10.5px;
+  letter-spacing: 1px;
+  color: #6a6f81;
+}
+.main .container .stats ul li span {
+  font-size: 17px;
+  color: #2d3248;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

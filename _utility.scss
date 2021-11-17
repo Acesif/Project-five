@@ -1,0 +1,11 @@
+@import 'variables';
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $Dark-cyan;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
